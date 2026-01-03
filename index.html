@@ -1,243 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syntex Corporation</title>
-    <meta name="description" content="Your gateway to AI and software innovation" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/syntex_logo_letter.png">
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="navbar-container">
-          <div>
-            <img draggable="false" src="assets/images/syntex_logo.png" alt="SYNTEX" class="logo">
-          </div>
-          
-          <div class="nav-links">
-            <a href="#products">Products</a>
-            <a href="#whats-next">What's Next</a>
-            <a href="#" class="nav-button">Explore</a>
-          </div>
-        
-        </div>
-      </nav>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syntex Corporation | Innovation Lab</title>
+  <meta name="description" content="Your gateway to AI and software innovation. Creators of Codebrae.">
+  
+  <link rel="icon" href="assets/images/syntex_logo_letter.png">
 
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-        
-        <div class="hero-container">
-          <div class="hero-content">
-            <h1>
-              Your gateway to <span class="text-electric">AI</span> and <span class="text-accent">software</span> innovation
-            </h1>
-            <p>
-              Where groundbreaking ideas meet frictionless usability. We craft both Open-Source and Closed-Source gems, building tools and experiences that feel like magic.
-            </p>
-            <div class="hero-buttons">
-              <a href="#products" class="button button-primary">Explore Products</a>
-              <a href="#whats-next" class="button button-outline">What's Next</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="scroll-indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-down" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-      </section>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Replaced Space Grotesk with Sora for a distinct, tech-forward display font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-      <!-- Products Section -->
-      <section class="products" id="products">
-        <div class="grid-bg"></div>
-        
-        <div class="products-container">
-          <div class="section-header">
-            <h2>What have we created so far?</h2>
-            <p>
-              Our creations span from seamless media synchronization to futuristic in-browser operating systems.
-            </p>
-          </div>
-          
-          <div class="product-cards">
-            <div class="product-card" data-delay="100">
-              <div class="product-type">
-                <span class="badge open-source">Open-Source</span>
-              </div>
-              
-              <h3>Synchrez</h3>
-              
-              <p>
-                Sync your favorite song on multiple devices—instantly, effortlessly, offline. Leveraging a local server and web tech to unite your devices under a common beat.
-              </p>
-              
-              <div class="product-link">
-                <span>Learn more</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </div>
-            </div>
-            
-            <div class="product-card" data-delay="300">
-              <div class="product-type">
-                <span class="badge open-source">Open-Source</span>
-              </div>
-              
-              <h3>Grabits</h3>
-              
-              <p>
-                Need to flip files between devices around the house? Grabits is your magic sauce—a speedy, simple, local webpage that whisks files across your Wi-Fi network.
-              </p>
-              
-              <div class="product-link">
-                <span>Learn more</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </div>
-            </div>
-            
-            <div class="product-card" data-delay="500">
-              <div class="product-type">
-                <span class="badge closed-source">Closed-Source</span>
-              </div>
-              
-              <h3>OSIO</h3>
-              
-              <p>
-                Run a mini-OS in your browser tabs! OSIO is your fun, powerful desktop playground—multitasking, custom scripting, and your personal digital environment.
-              </p>
-              
-              <div class="product-link">
-                <span>Learn more</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Sora', 'sans-serif'], /* Updated to Sora */
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              accent: '#4e86ff',
+              dark: '#050505',
+              panel: '#0A0A0A',
+              border: '#1A1A1A'
+            }
+          },
+          animation: {
+            'shimmer': 'shimmer 3s linear infinite',
+            'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { backgroundPosition: '200% 0' },
+              '100%': { backgroundPosition: '-200% 0' }
+            },
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-      <!-- What's Next Section -->
-      <section class="whats-next" id="whats-next">
-        <div class="whats-next-container">
-          <div class="whats-next-grid">
-            <div class="whats-next-content reveal-element">
-              <h2 class="text-electric">What's Next?</h2>
-              <p class="whats-next-intro">
-                Over the next few months, we're launching groundbreaking new tools and AI systems that will transform what's possible.
-              </p>
-              <p class="whats-next-mantra">
-                Our mantra? Make Technology Useful, Easy, and Efficient—for you, for everyone.
-              </p>
-              <div class="whats-next-features">
-                <div class="feature">
-                  <div class="pulse-dot electric"></div>
-                  <span>Advanced AI Assistants</span>
-                </div>
-                <div class="feature">
-                  <div class="pulse-dot accent"></div>
-                  <span>Immersive Web Experiences</span>
-                </div>
-                <div class="feature">
-                  <div class="pulse-dot highlight"></div>
-                  <span>Edge Computing Solutions</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="whats-next-terminal reveal-element">
-              <div class="terminal-card">
-                <div class="terminal-header">
-                  <div class="terminal-dot highlight"></div>
-                  <div class="terminal-dot accent"></div>
-                  <div class="terminal-dot electric"></div>
-                  <div class="terminal-title">Syntex Terminal</div>
-                </div>
-                <div class="terminal-content">
-                  <p>Initializing Syntex Innovation Engine.</p>
-                  <p>Loading modules: AI, Web, Desktop.</p>
-                  <p>Scanning for opportunities.</p>
-                  <p>Found: several revolutionary projects</p>
-                  <p>Status: In Development</p>
-                  <p>ETA: Coming Soon<span class="cursor">|</span></p>
-                </div>
-              </div>
-              <div class="glow-orb orb1"></div>
-              <div class="glow-orb orb2"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <style>
+    body { background-color: #000; color: #fff; }
+    
+    /* Background Grid */
+    .bg-grid-hero {
+      background-size: 50px 50px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+    }
 
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-grid">
-            <div class="footer-col">
-                <div>
-                    <img draggable="false" src="assets/images/syntex_logo.png" alt="SYNTEX" class="logo">
-                  </div>
-              <p class="footer-description">
-                Your doorway to artificial intelligence and software innovation.
-              </p>
-              <div class="social-links">
-                <a href="#" class="social-link">
-                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                  </svg>
-                </a>
-                <a href="https://github.com/Syntex-Systems/" class="social-link">
-                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
-                  </svg>
-                </a>
-                <a href="https://www.instagram.com/_syntex.co" class="social-link">
-                  <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path xmlns="http://www.w3.org/2000/svg" d="M 8 3 C 5.2475888 3 3 5.2475888 3 8 L 3 16 C 3 18.752411 5.2475888 21 8 21 L 16 21 C 18.752411 21 21 18.752411 21 16 L 21 8 C 21 5.2475888 18.752411 3 16 3 L 8 3 z M 8 4.5 L 16 4.5 C 17.941589 4.5 19.5 6.0584112 19.5 8 L 19.5 16 C 19.5 17.941589 17.941589 19.5 16 19.5 L 8 19.5 C 6.0584112 19.5 4.5 17.941589 4.5 16 L 4.5 8 C 4.5 6.0584112 6.0584112 4.5 8 4.5 z M 17.25 6 A 0.75 0.75 0 0 0 17.25 7.5 A 0.75 0.75 0 0 0 17.25 6 z M 12 7 C 10.395834 7 9.0977407 7.6285667 8.2519531 8.5800781 C 7.4061656 9.5315896 7 10.770833 7 12 C 7 13.229167 7.4061656 14.46841 8.2519531 15.419922 C 9.0977407 16.371433 10.395834 17 12 17 C 13.604166 17 14.902259 16.371433 15.748047 15.419922 C 16.593834 14.46841 17 13.229167 17 12 C 17 10.770833 16.593834 9.5315896 15.748047 8.5800781 C 14.902259 7.6285667 13.604166 7 12 7 z M 12 8.5 C 13.229166 8.5 14.056075 8.9339333 14.626953 9.5761719 C 15.197832 10.21841 15.5 11.104167 15.5 12 C 15.5 12.895833 15.197832 13.78159 14.626953 14.423828 C 14.056075 15.066067 13.229166 15.5 12 15.5 C 10.770834 15.5 9.9439254 15.066067 9.3730469 14.423828 C 8.8021684 13.78159 8.5 12.895833 8.5 12 C 8.5 11.104167 8.8021684 10.21841 9.3730469 9.5761719 C 9.9439254 8.9339333 10.770834 8.5 12 8.5 z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-            <div class="footer-col">
-              <h4>Products</h4>
-              <ul class="footer-links">
-                <li><a href="#">Synchrez</a></li>
-                <li><a href="#">Grabits</a></li>
-                <li><a href="#">OSIO</a></li>
-              </ul>
-            </div>
-        
-            
-            <div class="footer-col">
-              <h4>Resources</h4>
-              <ul class="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="footer-bottom">
-            <p>
-              © <span id="currentYear"></span> Syntex Corporation. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+    /* Glass Panels */
+    .glass-panel {
+      background: rgba(10, 10, 10, 0.6);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .glass-panel:hover {
+      border-color: rgba(78, 134, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* Smooth Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Gradient Text */
+    .text-gradient {
+      background: linear-gradient(to right, #4e86ff, #7b4dff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-blue-500/30 selection:text-white">
+
+  <!-- Nav -->
+  <nav class="fixed w-full top-0 z-50 border-b border-white/5 bg-black/80 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative z-20">
+      <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <img src="assets/images/syntex_logo.png" alt="Syntex" class="h-6 w-auto brightness-200">
+      </a>
+      
+      <div class="flex items-center gap-8">
+        <a href="#flagship" class="text-sm font-medium text-white hover:text-blue-400 transition-colors">Flagship</a>
+        <a href="#archive" class="text-sm text-gray-400 hover:text-white transition-colors">Archive</a>
+        <a href="https://codebrae.com" target="_blank" class="hidden md:block group relative px-5 py-2 bg-white text-black text-sm font-semibold rounded-full overflow-hidden transition-transform hover:scale-105">
+          <span class="relative z-10">Visit Codebrae</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-gray-100 via-white to-gray-100 opacity-0 group-hover:opacity-50 animate-shimmer"></div>
+        </a>
+      </div>
     </div>
+  </nav>
 
-    <script src="script.js"></script>
-  </body>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] pt-32 flex flex-col justify-center overflow-hidden">
+      <!-- Background Ambience -->
+      <div class="absolute inset-0 bg-grid-hero pointer-events-none"></div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 animate-fade-in-up">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          </span>
+          <span class="text-xs font-mono text-gray-300 uppercase tracking-widest">Incubating Future Tech</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-display text-5xl md:text-8xl font-bold leading-[0.95] tracking-tight mb-8 animate-fade-in-up" style="animation-delay: 100ms;">
+          Redefining human <br>
+          <span class="text-gradient">digital interaction.</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style="animation-delay: 200ms;">
+          Syntex Corporation is an innovation lab dedicated to simplifying technology. We build experimental prototypes and refine them into world-class products.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style="animation-delay: 300ms;">
+           <a href="#flagship" class="px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/10 text-white font-medium rounded-full transition-all backdrop-blur-sm">
+             View Our Work
+           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE FLAGSHIP (Codebrae) -->
+    <section id="flagship" class="py-24 px-6 border-t border-white/5 bg-brand-panel">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 reveal">
+          <span class="text-blue-500 font-mono text-sm tracking-wider uppercase mb-2 block">Current Focus</span>
+          <h2 class="font-display text-3xl md:text-5xl font-bold">The Flagship</h2>
+        </div>
+
+        <div class="reveal">
+          <div class="glass-panel rounded-3xl p-1 md:p-2 relative overflow-hidden group border-blue-500/20 hover:border-blue-500/50">
+            <!-- Glow Background -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-blue-600/20 blur-[100px] rounded-full pointer-events-none group-hover:bg-blue-600/30 transition-colors duration-500"></div>
+            
+            <div class="bg-black/40 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
+              <div class="flex-1 space-y-6">
+                <div class="flex items-center gap-3">
+                  <!-- Transparent Logo Container, 50x50px -->
+                  <div class="flex items-center justify-center">
+                    <img src="https://codebrae.com/assets/images/logo_black_2.png" class="w-[50px] h-[50px] invert filter brightness-0" alt="CB">
+                  </div>
+                  <h3 class="text-3xl font-display font-bold">Codebrae</h3>
+                </div>
+                
+                <p class="text-xl text-gray-300 leading-relaxed">
+                  The Infinite App Builder. Codebrae is the culmination of our research into generative AI and user experience. It allows anyone to generate, deploy, and discover web applications instantly using natural language prompts.
+                </p>
+                
+                <ul class="space-y-3 text-gray-400">
+                  <li class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-blue-400"></i> Instant App Generation</li>
+                  <li class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-blue-400"></i> Zero-Config Deployment</li>
+                  <li class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-blue-400"></i> Community Discovery Engine</li>
+                </ul>
+
+                <div class="pt-4">
+                  <a href="https://codebrae.com" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold transition-all shadow-lg shadow-blue-900/20">
+                    Launch Codebrae <i class="ph-bold ph-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Representation -->
+              <div class="flex-1 w-full relative">
+                <div class="relative aspect-video bg-gray-900 rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+                    <!-- Mock UI for Codebrae -->
+                    <div class="absolute inset-0 flex flex-col">
+                        <div class="h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        </div>
+                        <div class="flex-1 p-6 flex items-center justify-center bg-grid-hero">
+                             <div class="text-center">
+                                 <div class="inline-block p-4 bg-blue-500/20 text-blue-400 rounded-2xl mb-4">
+                                     <i class="ph-duotone ph-sparkle text-4xl"></i>
+                                 </div>
+                                 <div class="text-sm font-mono text-gray-500">Generating your app...</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE (Discontinued) -->
+    <section id="archive" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 reveal">
+          <span class="text-gray-500 font-mono text-sm tracking-wider uppercase mb-2 block">Experimental Roots</span>
+          <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">Innovation Archive</h2>
+          <p class="text-gray-400 max-w-2xl">
+            Projects that paved the way. These experiments are currently discontinued as we focus our resources on Codebrae, but their DNA lives on in our technology.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 reveal">
+          
+          <!-- OSIO -->
+          <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+            <div class="absolute top-4 right-4 px-3 py-1 bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-bold rounded-full uppercase">Discontinued</div>
+            <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-2xl mb-6 text-gray-300">
+              <i class="ph-bold ph-desktop"></i>
+            </div>
+            <h3 class="text-xl font-bold font-display mb-2">OSIO</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              A web-based operating system simulation. OSIO pushed the boundaries of what browsers could do, offering a desktop environment with multitasking and custom scripting capabilities within a single tab.
+            </p>
+          </div>
+
+          <!-- Synchrez -->
+          <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+            <div class="absolute top-4 right-4 px-3 py-1 bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-bold rounded-full uppercase">Discontinued</div>
+            <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-2xl mb-6 text-gray-300">
+              <i class="ph-bold ph-music-notes"></i>
+            </div>
+            <h3 class="text-xl font-bold font-display mb-2">Synchrez</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              A precise media synchronization protocol. It allowed multiple devices to play music in perfect unison over local networks, exploring low-latency web socket communications.
+            </p>
+          </div>
+
+          <!-- Grabits -->
+          <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+            <div class="absolute top-4 right-4 px-3 py-1 bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-bold rounded-full uppercase">Discontinued</div>
+            <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-2xl mb-6 text-gray-300">
+              <i class="ph-bold ph-arrows-left-right"></i>
+            </div>
+            <h3 class="text-xl font-bold font-display mb-2">Grabits</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              A frictionless local file transfer tool. Grabits eliminated the need for cloud uploads when moving files between devices on the same Wi-Fi, focusing on speed and privacy.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-black pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4">
+            <img src="assets/images/syntex_logo.png" alt="Syntex" class="h-6 w-auto brightness-200">
+          </a>
+          <p class="text-sm text-gray-500 max-w-sm">
+            Syntex Corporation. Building the bridge between artificial intelligence and human creativity.
+          </p>
+        </div>
+        
+        <div class="flex gap-6">
+           <a href="https://github.com/Syntex-Systems" class="text-gray-400 hover:text-white transition-colors"><i class="ph-fill ph-github-logo text-2xl"></i></a>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+        <p>&copy; 2026 Syntex Corporation. All rights reserved.</p>
+        <p>Designed in the Future.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Animation Logic -->
+  <script>
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
 </html>
